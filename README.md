@@ -12,6 +12,9 @@ FindINT支持两种丢包位（Loss_Bit）编码方式：
 例如，Loss_Bit长度为2时，INT Source Node 按照“00 01 10 11 00 01 10 11 ...”的规律标记到达的遥测数据包。
 
 
+![result](./result.jpg)
+
+
 使用方式：
 
 1.安装P4-Tutorial镜像，推荐https://github.com/p4lang/tutorials/
