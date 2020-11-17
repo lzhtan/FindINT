@@ -11,6 +11,7 @@ FindINT支持两种丢包位（Loss_Bit）编码方式：
 
 例如，Loss_Bit长度为2时，INT Source Node 按照“00 01 10 11 00 01 10 11 ...”的规律标记到达的遥测数据包。
 
+通过逐点标记，FindINT支持丢包定位。
 
 ![result](./result.jpg)
 
