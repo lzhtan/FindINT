@@ -33,13 +33,23 @@ FindINT支持两种丢包位（Loss_Bit）编码方式：
 
 4.在终端中执行Make。
 
-5.测试 h1 ping h2，并成果ping通。
+5.测试 
 
-6.打开终端，xterm h1 h2。
+     h1 ping h2
+并成果ping通。
 
-7.在H2中执行./receive.py
+6.打开终端
 
-8.在H1中执行./send.py 10.0.2.2 "123" 100000
+     xterm h1 h2
+
+7.在H2中执行
+
+     ./receive.py
+
+8.在H1中执行
+
+     ./send.py 10.0.2.2 "123" 100000
+     
 其中100000是INT数据包数量。
 
 9.在H2中观察到丢包率测量结果。
