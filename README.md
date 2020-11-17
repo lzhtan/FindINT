@@ -20,8 +20,14 @@ FindINT支持两种丢包位（Loss_Bit）编码方式：
 
 1.安装P4-Tutorial镜像，推荐https://github.com/p4lang/tutorials/
 
-2.找到/usr/local/share/p4c/p4include/v1model.p4文件，找到：void read(out T result, in bit<32> index);
-在该行前面添加一行：register(bit<32> size, T initial_value);
+2.找到/usr/local/share/p4c/p4include/v1model.p4文件，找到：
+     
+     void read(out T result, in bit<32> index);
+
+在该行前面添加一行：     
+     
+     register(bit<32> size, T initial_value);
+
 效果如下：
 
      *              ignored by the caller.
@@ -40,7 +46,8 @@ FindINT支持两种丢包位（Loss_Bit）编码方式：
 5.测试 
 
      h1 ping h2
-并成果ping通。
+
+并成功ping通。
 
 6.打开终端
 
