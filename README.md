@@ -1,7 +1,7 @@
-# FindINT
+# INTLossDetect
 A packet loss detection and location solution based on AM-PM and INT, suitable for Mininet environment, written in P4 language.
 
-FindINT支持两种丢包位（Loss_Bit）编码方式：
+INTLossDetect支持两种丢包位（Loss_Bit）编码方式：
 
 （1）SAM，单Bit交替标记
 
@@ -11,7 +11,7 @@ FindINT支持两种丢包位（Loss_Bit）编码方式：
 
 例如，Loss_Bit长度为2时，INT Source Node 按照“00 01 10 11 00 01 10 11 ...”的规律标记到达的遥测数据包。
 
-通过逐点标记，FindINT支持丢包定位。
+通过逐点标记，INTLossDetect支持丢包定位。
 
 ![result](./result.jpg)
 
@@ -39,7 +39,7 @@ FindINT支持两种丢包位（Loss_Bit）编码方式：
      * index, with the value provided by the value parameter.
 
 
-3.将FindINT解压到exercises文件夹中，并进入FindINT。
+3.将INTLossDetect解压到exercises文件夹中，并进入INTLossDetect。
 
 4.在终端中执行Make。
 
