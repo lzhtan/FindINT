@@ -2,10 +2,15 @@
 A packet loss detection and location solution based on AM-PM and INT, suitable for Mininet environment, written in P4 language.
 
 FindINT supports two encoding methods of Loss_Bit:
+
 **（1）SAM, Single-Bit Alternate Marking**
+
 For example, when the alternate period is 6, the INT Source Node marks the arriving telemetry data packets according to the rule of "0 0 0 1 1 1 0 0 0 1 1 1 ...".
+
 **（2）MCM, multi-bit cycle mark**
+
 For example, when the length of Loss_Bit is 2, INT Source Node marks the arriving telemetry data packets according to the rule of "00 01 10 11 00 01 10 11 ...".
+
 By marking point by point, FindINT supports packet loss location.
 
 ![result](./result.jpg)
@@ -13,6 +18,7 @@ By marking point by point, FindINT supports packet loss location.
 How to use FindINT:
 
 1. Install P4-Tutorial mirror, recommend https://github.com/p4lang/tutorials/
+
 2. Find the /usr/local/share/p4c/p4include/v1model.p4 file and find:
      
      void read(out T result, in bit<32> index);
@@ -37,13 +43,13 @@ The effect is as follows:
 
 5. Test
      
-     h1 ping h2
+    h1 ping h2
 
 And successfully pinged.
 
 6. Open the terminal
 
-
+     *              ignored by the caller.
      xterm h1 h2
 
 7. Execute in H2
