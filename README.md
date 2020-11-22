@@ -58,8 +58,10 @@ And successfully pinged.
 
 8. Execute in H1
 
+     
      ./send.py 10.0.2.2 "123" 100000
      
+
 100000 is the number of INT packets.
 
 9. The packet loss rate measurement result is observed in H2.
