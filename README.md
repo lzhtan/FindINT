@@ -38,34 +38,26 @@ The effect is as follows:
      * index, with the value provided by the value parameter.
      
 3. Unzip FindINT into the exercises folder and enter FindINT.
-
 4. Execute Make in the terminal.
-
 5. Test
-     
-    h1 ping h2
-
+     h1 ping h2
 And successfully pinged.
 
 6. Open the terminal
-
-     *              ignored by the caller.
-     xterm h1 h2
-
+    
+    xterm h1 h2
+    
 7. Execute in H2
-
-     ./receive.py
-
+    
+    ./receive.py
+    
 8. Execute in H1
 
+    ./send.py 10.0.2.2 "123" 100000
      
-     ./send.py 10.0.2.2 "123" 100000
-     
-
 100000 is the number of INT packets.
 
 9. The packet loss rate measurement result is observed in H2.
-
 
 
 FindINT支持两种丢包位（Loss_Bit）编码方式：
