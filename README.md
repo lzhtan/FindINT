@@ -62,6 +62,8 @@ And successfully pinged.
 9. The packet loss rate measurement result is observed in H2.
 
 
+# 中文简介
+
 FindINT支持两种丢包位（Loss_Bit）编码方式：
 **（1）SAM，单Bit交替标记**
 例如，交替周期为6时，INT Source Node 按照“0 0 0 1 1 1 0 0 0 1 1 1 ...”的规律标记到达的遥测数据包。
