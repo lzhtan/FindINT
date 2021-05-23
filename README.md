@@ -1,4 +1,4 @@
-[WARNING] This project was integrated into LossSight, Please see https://github.com/lzhtan/LossSight.
+**[WARNING] This project was integrated into LossSight, Please see https://github.com/lzhtan/LossSight.**
 
 
 Demo Video: https://www.bilibili.com/video/BV1yv411t7G1
